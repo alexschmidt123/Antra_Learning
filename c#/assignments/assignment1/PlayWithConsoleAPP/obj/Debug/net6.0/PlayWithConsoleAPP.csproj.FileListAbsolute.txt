@@ -1,0 +1,15 @@
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\bin\Debug\net6.0\PlayWithConsoleAPP.exe
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\bin\Debug\net6.0\PlayWithConsoleAPP.deps.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\bin\Debug\net6.0\PlayWithConsoleAPP.runtimeconfig.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\bin\Debug\net6.0\PlayWithConsoleAPP.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\bin\Debug\net6.0\PlayWithConsoleAPP.pdb
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\PlayWithConsoleAPP.csproj.AssemblyReference.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\PlayWithConsoleAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\PlayWithConsoleAPP.AssemblyInfoInputs.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\PlayWithConsoleAPP.AssemblyInfo.cs
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\PlayWithConsoleAPP.csproj.CoreCompileInputs.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\PlayWithConsoleAPP.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\refint\PlayWithConsoleAPP.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\PlayWithConsoleAPP.pdb
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\PlayWithConsoleAPP.genruntimeconfig.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment1\PlayWithConsoleAPP\obj\Debug\net6.0\ref\PlayWithConsoleAPP.dll
