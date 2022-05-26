@@ -1,0 +1,15 @@
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\bin\Debug\net6.0\P7.exe
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\bin\Debug\net6.0\P7.deps.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\bin\Debug\net6.0\P7.runtimeconfig.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\bin\Debug\net6.0\P7.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\bin\Debug\net6.0\P7.pdb
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\P7.csproj.AssemblyReference.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\P7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\P7.AssemblyInfoInputs.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\P7.AssemblyInfo.cs
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\P7.csproj.CoreCompileInputs.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\P7.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\refint\P7.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\P7.pdb
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\P7.genruntimeconfig.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment2\Practice arrays\P7\P7\obj\Debug\net6.0\ref\P7.dll
