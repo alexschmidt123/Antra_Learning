@@ -41,7 +41,6 @@ namespace ColorAndBalls.Repository
         public int Insert(Ball obj)
         {
             balls.Add(obj);
-
             return 1;
         }
 
@@ -58,7 +57,24 @@ namespace ColorAndBalls.Repository
             }
             return 0;
         }
+        public int Throw(int id){
+            Ball ball = GetById(id);
+            if (ball.size !=0){
+                ball.throws++;
+                return 1;
+            }
+            return 0;
+        }
 
+        public int Pop(int id)
+        {
+            Ball ball = GetById(id);
+            if (ball.size!=0){
+                ball.size = 0;
+                return 1;
+            }
+            return 0;
+        }
 
     }
 }

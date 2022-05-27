@@ -54,6 +54,31 @@ namespace ColorAndBalls.Controllers{
             }
         }
 
+        private void ThrowBall(){
+            Console.WriteLine("Enter Id of the Ball you want to throw: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            if (ballRepository.Throw(id)>0)
+            {
+                Console.WriteLine("This Ball is thrown successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Errors happened OR this ball has been poped out");
+            }
+        }
+
+        private void PopBall(){
+            Console.WriteLine("Enter Id of the Ball you want to pop: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            if (ballRepository.Pop(id)>0)
+            {
+                Console.WriteLine("This Ball is thrown successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Errors happened OR this ball has been poped out");
+            }
+        }
 
         public void run()
         {
@@ -61,6 +86,8 @@ namespace ColorAndBalls.Controllers{
             Console.WriteLine("Press 1 to add a new Ball");
             Console.WriteLine("Press 2 to print all Balls");
             Console.WriteLine("Press 3 to delete a Ball");
+            Console.WriteLine("Press 4 to throw a Ball");
+            Console.WriteLine("Press 5 to pop a Ball");
             Console.WriteLine("Press 9 to exit Ball Controller");
 
             Console.Write ("Enter to select the function you want to implement =>");
@@ -79,6 +106,13 @@ namespace ColorAndBalls.Controllers{
                     case 3:
                         DeleteBall();
                         break;
+
+                    case 4:
+                        ThrowBall();
+                        break;
+                    case 5:
+                        PopBall();
+                        break;   
                     default:
                         Console.WriteLine("Invalid Selection");
                         break;
