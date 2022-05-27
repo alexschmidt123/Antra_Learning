@@ -1,0 +1,15 @@
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\bin\Debug\net6.0\ColorAndBalls.exe
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\bin\Debug\net6.0\ColorAndBalls.deps.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\bin\Debug\net6.0\ColorAndBalls.runtimeconfig.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\bin\Debug\net6.0\ColorAndBalls.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\bin\Debug\net6.0\ColorAndBalls.pdb
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ColorAndBalls.csproj.AssemblyReference.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ColorAndBalls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ColorAndBalls.AssemblyInfoInputs.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ColorAndBalls.AssemblyInfo.cs
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ColorAndBalls.csproj.CoreCompileInputs.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ColorAndBalls.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\refint\ColorAndBalls.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ColorAndBalls.pdb
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ColorAndBalls.genruntimeconfig.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\ColorAndBalls\ColorAndBalls\obj\Debug\net6.0\ref\ColorAndBalls.dll

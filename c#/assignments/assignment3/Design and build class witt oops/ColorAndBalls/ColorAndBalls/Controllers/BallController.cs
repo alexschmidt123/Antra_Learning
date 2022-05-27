@@ -6,6 +6,7 @@ namespace ColorAndBalls.Controllers{
         BallRepository ballRepository = new BallRepository();
         private void AddBall(){
             Ball ball = new Ball();
+            ball.color = new Color();
             Console.WriteLine("Enter Ball Id:");
             ball.Id = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter Ball Size (size >0):");
