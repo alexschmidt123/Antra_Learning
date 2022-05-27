@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SchoolManagement.DataModel;
-
-class Course
+namespace SchoolManagement.DataModel
 {
-    public int Id { get; set; }
-    public string Name { get; set; }    
-    public string[] Students { get; set; }
+    public class Course
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string[] Students { get; set; }
+    }
+
 }

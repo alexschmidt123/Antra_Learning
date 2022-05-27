@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using SchoolManagement;
+using SchoolManagement.Presentation;
+
+ManageStudent managestudent = new ManageStudent();
+managestudent.run();

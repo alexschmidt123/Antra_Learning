@@ -3,3 +3,13 @@ C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Desi
 C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.AssemblyInfoInputs.cache
 C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.AssemblyInfo.cs
 C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\bin\Debug\net6.0\SchoolManagement.exe
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\bin\Debug\net6.0\SchoolManagement.deps.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\bin\Debug\net6.0\SchoolManagement.runtimeconfig.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\bin\Debug\net6.0\SchoolManagement.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\bin\Debug\net6.0\SchoolManagement.pdb
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\refint\SchoolManagement.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.pdb
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.genruntimeconfig.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\ref\SchoolManagement.dll
