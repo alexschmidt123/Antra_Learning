@@ -1,0 +1,5 @@
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.csproj.AssemblyReference.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.AssemblyInfoInputs.cache
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.AssemblyInfo.cs
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\c#\assignments\assignment3\Design and build class witt oops\StudentManagement\StudentManagement\obj\Debug\net6.0\SchoolManagement.csproj.CoreCompileInputs.cache
