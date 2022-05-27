@@ -62,7 +62,7 @@ namespace ColorAndBalls.Controllers{
             Console.Write ("Enter to select the function you want to implement =>");
             int selection = Convert.ToInt32(Console.ReadLine());
 
-            while(selection != 0)
+            while(selection != 9)
             {
                 switch (selection)
                 {

@@ -10,7 +10,7 @@ namespace ColorAndBalls.Models
     {
         public int Id {get;set;}
         public int size { get; set; }
-        public int[] color { get; set; }
+        public Color color { get; set; }
         public int throws { get; set; }
     }
 }
