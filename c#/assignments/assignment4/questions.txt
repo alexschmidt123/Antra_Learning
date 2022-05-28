@@ -36,7 +36,7 @@ Practice working with Generics
 has following methods
     1. int Count()
     2. T Pop()
-    3. Void Push()
+    3. Void Push() 
 
 2. Create a Generic List data structure MyList<T> that can store any data type.
 Implement the following methods.
