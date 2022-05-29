@@ -307,12 +307,16 @@ SELECT ProductId, ProductName, UnitPrice, RANK() OVER (ORDER BY UnitPrice DESC) 
 ROW_NUMBER() OVER(ORDER BY UnitPrice DESC) AS RowNum
 FROM Products
 
+
+USE Northwind
+GO
 --partition by: used to divde the result set into partitions and perform computation on each subset of partitioned data
 --list customers from every country with the ranking for number of orders
 SELECT C.ContactName, C.Country, count(o.OrderID) AS NumOfOrders, 
 RANK() OVER(PARTITION BY c.Country ORDER BY COUNT(o.OrderId) DESC) AS RNK 
 FROM Customers c JOIN Orders o ON c.CustomerID = o.CustomerID
 GROUP BY C.ContactName, C.Country
+ORDER BY C.Country;
 
 --- find top 3 customers from every country with maximum orders
 SELECT dt.ContactName, dt.Country, dt.NumOfOrders, DT.RNK
@@ -321,6 +325,7 @@ RANK() OVER(PARTITION BY c.Country ORDER BY COUNT(o.OrderId) DESC) AS RNK
 FROM Customers c JOIN Orders o ON c.CustomerID = o.CustomerID
 GROUP BY C.ContactName, C.Country) dt
 WHERE dt.RNK <= 3
+Order by dt.Country;
 
 
 --cte: common table expression
