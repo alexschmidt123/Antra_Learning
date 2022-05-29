@@ -136,7 +136,8 @@ EXEC spGetAllEmp
 --DDL trigger
 --Logon Trigger
 
-
+use Northwind
+go
 --function: 
 CREATE FUNCTION GetTotalRevenue(@price money, @discount real, @quantity smallint) 
 returns money
