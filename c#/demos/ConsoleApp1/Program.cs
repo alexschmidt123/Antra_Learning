@@ -14,12 +14,12 @@ ParamPassing demo = new ParamPassing();
 //demo.AreaOfCircle(10);
 //demo.AreaOfCircle(10,3);
 
-//string str;
-//Console.WriteLine(demo.IsAuthentic("rebecca", "liu", out str));
-//Console.WriteLine(str);
+string str;
+Console.WriteLine(demo.IsAuthentic("rebecca", "liu", out str));
+Console.WriteLine(str);
 
-Console.WriteLine(demo.AddNumbers(10,20));
-Console.WriteLine(demo.AddNumbers(10,20,30,40));
+//Console.WriteLine(demo.AddNumbers(10,20));
+//Console.WriteLine(demo.AddNumbers(10,20,30,40));
 
 
 //using System.Text;
