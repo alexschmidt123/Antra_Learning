@@ -8,6 +8,9 @@ namespace ConsoleApp1
 {
     public class ParamPassing
     {
+        // passing by value: a copy of actual parameters is created and will be passed into former parameters
+        // default
+        // so the previous parameters'values would not change after inmplementation.
         public void PassingByValue(int a, int b)
         {
             a = 80;
@@ -15,6 +18,8 @@ namespace ConsoleApp1
             Console.WriteLine($"inside passing by value method: a = {a}, b = {b}");
         }
 
+        // passing by type: the actual value is passed to the former parameters, so any change of former paramters will influence the actual parameters.
+        //keyword ref
         public void PassingByReference(ref int a, ref int b)
         {
             a = 80;
@@ -22,11 +27,14 @@ namespace ConsoleApp1
             Console.WriteLine($"inside passing by reference method: a = {a}, b = {b}");
         }
 
+        // optional parameter: assign default values to optional parameters
         public void AreaOfCircle(double radius, double pi = 3.14)
         {
             Console.WriteLine($"Area of circle = {pi * radius * radius}");
         }
 
+        // out mode example
+        // returns more than one values
         public bool IsAuthentic(string uname, string password, out string msg)
         {
             msg = "";
@@ -55,6 +63,8 @@ namespace ConsoleApp1
             return a + b  + c;
         }
 
+        //parameters with variable length
+        // keyword params
         public int AddNumbers(params int[] arr)
         {
             int length = arr.Length;
