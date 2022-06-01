@@ -1,13 +1,14 @@
 namespace ConsoleApp2{
-    public class Employee{
+    public abstract class Employee{
         public int Id {get;set;}
         public string FullName {get;set;}
         public string Email {get;set;}
         public string Phone {get;set;}
         public string Address {get;set;}
 
-        public virtual void PerformWork(){
-            Console.WriteLine("All employees should arrive before 10am in work days");
+        public abstract void PerformWork();
+        public virtual void  Virtualdemo(){
+            Console.WriteLine("This is virtualdemo");
         }
     }
 
@@ -18,15 +19,25 @@ namespace ConsoleApp2{
         {
             Console.WriteLine("Full time employees works 40 hours per week");
         }
+        public override void Virtualdemo()
+        {
+            Console.WriteLine("This is overridden virtualdemo");
+        }
     }
 
-    public class PartTimeEmployee: Employee{
+    public sealed class PartTimeEmployee: Employee{
         public decimal HourlyPay {get;set;}
-        // override is optional. If not override, the method from parent class will be implemented.
-        // public override void PerformWork()
-        // {
-        //     Console.WriteLine("Part time employees works 20 hours per week");
-        // }
-        
+        // override is optional for virtual methods. If not override, the method from parent class will be implemented.
+        //but override is forced for abstract methods.
+        public override void PerformWork()
+        {
+            Console.WriteLine("Part time employees works 20 hours per week");
+        }
+    }
+
+    public class Manager : FullTimeEmployee{
+        public void AttendMeeting(){
+            Console.WriteLine("Manangers must attend meetings!!!!!!");
+        }
     }
 }

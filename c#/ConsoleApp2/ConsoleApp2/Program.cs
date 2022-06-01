@@ -20,8 +20,10 @@ namespace ConsoleApp2{
             //Empoyee:
             FullTimeEmployee fte = new FullTimeEmployee();
             fte.PerformWork();
+            fte.Virtualdemo();
             PartTimeEmployee pte = new PartTimeEmployee();
             pte.PerformWork();
+            pte.Virtualdemo();
         }
     }
 }
