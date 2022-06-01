@@ -11,9 +11,17 @@
 namespace ConsoleApp2{
     public class Program{
         public static void Main(string[] args){
-            Customer c = new Customer("Tom",24,1);
-            Console.WriteLine(c.Name);
-            Console.WriteLine(c.Age);
-            Console.WriteLine(c.Id);}
+            //Customer:
+            // Customer c = new Customer("Tom",24,1);
+            // Console.WriteLine(c.Name);
+            // Console.WriteLine(c.Age);
+            // Console.WriteLine(c.Id);
+
+            //Empoyee:
+            FullTimeEmployee fte = new FullTimeEmployee();
+            fte.PerformWork();
+            PartTimeEmployee pte = new PartTimeEmployee();
+            pte.PerformWork();
+        }
     }
 }
