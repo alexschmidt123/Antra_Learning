@@ -123,8 +123,8 @@ Master, Model, Msdb and Tempdb database
 Candidate key is a single key or a group of multiple keys that uniquely identify rows in a table
 
 22. DDL vs. DML
-Data Definition Language (DDL) statements, which allow you to create objects in the database
-Data Manipulation Language (DML) statements, which allow you to query and modify the data
+Data Definition Language (DDL) statements, which allow you to create objects in the database --create drop alter
+Data Manipulation Language (DML) statements, which allow you to query and modify the data -- select update delete
 
 23. ACID property
 A: Atomicity -- work is atomic
