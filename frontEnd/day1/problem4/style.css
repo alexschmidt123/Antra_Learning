@@ -1,0 +1,23 @@
+.row {
+    height: 100px;
+}
+
+.subrow {
+    height: 100%;
+    width:100%;
+}
+
+.right {
+    text-align: right;
+    align-items: center;
+}
+
+.middle{
+    text-align: center;
+    align-items: center;
+}
+
+body, .container{
+    margin: 40px auto;
+    width: 70%;
+}
