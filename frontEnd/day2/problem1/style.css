@@ -1,85 +1,90 @@
-.container{
+.container {
     background-color: #234465;
     margin: 20px auto;
-    width:70%;
+    width: 70%;
     justify-content: space-between;
 }
 
-.menu{
+.menu {
     margin-right: 30px;
 }
 
-.flexed{
+.flexed {
     display: flex;
     text-align: center;
     align-items: center;
 }
 
-img{
+img {
     width: 250px;
     margin: 10px auto;
 }
 
-.top{
+.top {
     justify-content: right;
     gap: 2em;
 }
 
-.bottom{
+.bottom {
     justify-content: space-between;
     gap: 2em;
 }
 
-button{
+button {
     color: white;
     background-color: #234465;
     border: none;
     cursor: pointer;
 }
 
-p{
-    color:white;
+p {
+    color: white;
 }
 
-.bar{
-    gap:1em;
+.bar {
+    gap: 1em;
 }
 
-.search{
-    gap:0;
+.search {
+    gap: 0;
     background-color: white;
 }
 
-.search button{
-    color:black;
+.search button {
+    color: black;
     background-color: white;
-    border:white;
-    cursor:pointer;
+    border: white;
+    cursor: pointer;
 }
 
 
 .dropdown {
     display: inline-block;
     position: relative;
-  }
-  .dropdown-content {
+}
+
+.dropdown-content {
+    background-color: white;
     display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  }
-  .dropdown:hover .dropdown-content {
+    position:absolute;
+    width: 100px;
+    overflow:visible;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     background-color: white;
     display: block;
     color: #000000;
     padding: 5px;
     text-decoration: none;
-  }
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
     color: #FFFFFF;
     background-color: #00A4BD;
-  }
+}
