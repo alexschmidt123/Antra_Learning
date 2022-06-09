@@ -16,7 +16,10 @@ body{
 
 .head{
     background-image: url("bg.jpg");
-    height: 374px;
+    min-height: 374px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .head h1{
