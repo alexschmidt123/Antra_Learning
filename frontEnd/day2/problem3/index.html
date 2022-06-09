@@ -8,6 +8,9 @@
     <title>The Antra News</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,29 +26,145 @@
             <div class="content_body">
                 <h3>News</h3>
 
-                    <div class="slider">
-                        <div class="slides">
-                            <div id="slides__1" class="slide">
-                                <span class="slide__text">1</span>
-                            </div>
-                            <div id="slides__2" class="slide">
-                                <span class="slide__text">2</span>
-                            </div>
-                            <div id="slides__3" class="slide">
-                                <span class="slide__text">3</span>
-                            </div>
-                            <div id="slides__4" class="slide">
-                                <span class="slide__text">4</span>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="features flexed">
+                                <div class="feature">
+                                    <p>LEVEL #0 STARTS ON THE 5TH OF JULY</p>
+                                    <p>18/06/2014</p>
+                                    <p>Published by: Alexandra Svilarova</p>
+                                    <hr>
+                                    <img src="p1.PNG" alt="p1">
+                                    <p>The deadline for application is extended to the 3rd of July</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra apply deadline application July</strong>
+                                    </p>
+                                </div>
+                                <div class="feature">
+                                    <p>SUMMER BREAK + SCHEDULE LEVEL #1</p>
+                                    <p>13/06/2014</p>
+                                    <p>Published by: Alexandra Svilarova</p>
+                                    <hr>
+                                    <img src="p2.PNG" alt="p2">
+                                    <p>Summer break 2-10 august</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra schedule summer-vacation exams</strong>
+                                    </p>
+                                </div>
+                                <div class="feature">
+                                    <p>FEEDBACK FROM Antra Inc CONF MAY 2014</p>
+                                    <p>02/06/2014</p>
+                                    <p>Published by: Petya Grozdarska</p>
+                                    <hr>
+                                    <img src="p3.PNG" alt="p3">
+                                    <p>Responses from the questionnaire about the usefulness of the first Antra Inc Conf</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra-conf conference feedback</strong>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="slider__nav">
-                            <a  href="#slides__1">1</a>
-                            <a  href="#slides__2">2</a>
-                            <a  href="#slides__3">3</a>
-                            <a  href="#slides__4">4</a>
+
+                        <div class="item">
+                            <div class="features flexed">
+                                <div class="feature">
+                                    <p>SUMMER BREAK + SCHEDULE LEVEL #1</p>
+                                    <p>13/06/2014</p>
+                                    <p>Published by: Alexandra Svilarova</p>
+                                    <hr>
+                                    <img src="p2.PNG" alt="p2">
+                                    <p>Summer break 2-10 august</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra schedule summer-vacation exams</strong>
+                                    </p>
+                                </div>
+                                <div class="feature">
+                                    <p>LEVEL #0 STARTS ON THE 5TH OF JULY</p>
+                                    <p>18/06/2014</p>
+                                    <p>Published by: Alexandra Svilarova</p>
+                                    <hr>
+                                    <img src="p1.PNG" alt="p1">
+                                    <p>The deadline for application is extended to the 3rd of July</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra apply deadline application July</strong>
+                                    </p>
+                                </div>
+                                <div class="feature">
+                                    <p>FEEDBACK FROM Antra Inc CONF MAY 2014</p>
+                                    <p>02/06/2014</p>
+                                    <p>Published by: Petya Grozdarska</p>
+                                    <hr>
+                                    <img src="p3.PNG" alt="p3">
+                                    <p>Responses from the questionnaire about the usefulness of the first Antra Inc Conf</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra-conf conference feedback</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="features flexed">
+                                <div class="feature">
+                                    <p>FEEDBACK FROM Antra Inc CONF MAY 2014</p>
+                                    <p>02/06/2014</p>
+                                    <p>Published by: Petya Grozdarska</p>
+                                    <hr>
+                                    <img src="p3.PNG" alt="p3">
+                                    <p>Responses from the questionnaire about the usefulness of the first Antra Inc Conf</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra-conf conference feedback</strong>
+                                    </p>
+                                </div>
+                                <div class="feature">
+                                    <p>SUMMER BREAK + SCHEDULE LEVEL #1</p>
+                                    <p>13/06/2014</p>
+                                    <p>Published by: Alexandra Svilarova</p>
+                                    <hr>
+                                    <img src="p2.PNG" alt="p2">
+                                    <p>Summer break 2-10 august</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra schedule summer-vacation exams</strong>
+                                    </p>
+                                </div>
+                                <div class="feature">
+                                    <p>LEVEL #0 STARTS ON THE 5TH OF JULY</p>
+                                    <p>18/06/2014</p>
+                                    <p>Published by: Alexandra Svilarova</p>
+                                    <hr>
+                                    <img src="p1.PNG" alt="p1">
+                                    <p>The deadline for application is extended to the 3rd of July</p>
+                                    <hr>
+                                    <p><strong>Tags: antra-inc home-page antra apply deadline application July</strong>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <div class="indicators">
+                        <!-- Indicators -->
+
+                        <ol class="carousel-indicators gaps">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"><button>1</button></li>
+                            <li data-target="#myCarousel" data-slide-to="1"><button>2</button></li>
+                            <li data-target="#myCarousel" data-slide-to="2"><button>3</button></li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

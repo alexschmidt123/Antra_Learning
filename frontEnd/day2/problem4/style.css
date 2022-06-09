@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: black;
+}
+.container{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.head{
+    background-image: url("bg.jpg");
+    height: 374px;
+}
+
+.head h1{
+    position:absolute;
+    top:280px;
+    right:18%;
+    color: white;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #e4e4e4;
+    height: 3em;
+}
+
+.nav button{
+    padding: 1em;
+}
+
+.content{
+    display:flex;
+    background-color:white;
+    gap: 30px;
+}
+
+.left{
+    flex:4;
+}
+
+.right{
+    flex: 1;
+}
+
+.welcome, .product{
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #e4e4e4;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+.news{
+    margin-right: 20px;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #e4e4e4;
+    background-color: #e4e4e4;
+    padding: 10px;
+}
+
+.message{
+    margin-right: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #e4e4e4;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.feature{
+    display: flex;
+    gap: 20px;
+}
+
+.feature img{
+    flex: 1;
+}
+.feature .text{
+    flex: 3;
+}
+
+.news h1, .product h1, .message h1, .welcome h1, .unit a, .message a{
+    color: #7fb537;
+}
+
+.foot{
+    background-color: #7fb537;
+    padding: 2em;
+}
+
+.foot a{
+    color: black;
+}
