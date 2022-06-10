@@ -11,7 +11,7 @@ console.log(decodedData);
 
 
 //cookie
-document.cookie = "username=John Doe; expires=Thu,13 Jun 2022 12:00:00 UTC; path=/"; 
+document.cookie = "username=John Doe; expires=Thu,13 Jun 2022 12:00:00 UTC; path=/";
 console.log(document.cookie);
 
 //get current date and time
@@ -21,17 +21,17 @@ console.log(currentDate);
 //XMLHttpRequest
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
-oReq.open("GET", "http://jsonplaceholder.typicode.com/posts/1");
+oReq.open("GET", "https://jsonplaceholder.typicode.com/posts/1");
 oReq.send();
-function reqListener(){
+function reqListener() {
     console.log(this.responseText)
 }
 
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
-oReq.open("POST", "http://jsonplaceholder.typicode.com/posts");
+oReq.open("POST", "https://jsonplaceholder.typicode.com/posts");
 oReq.send("title=Example POST Request&body=Antra.com&userId=1");
-function reqListener(){
+function reqListener() {
     console.log(this.responseText)
 }
 
@@ -42,36 +42,101 @@ function reqListener(){
 
 //both of these return something, so the order of resolve or reject matters.
 //Callback: is essentially a function that is passed in as a parameter
-function promiseDemo(){
-    let p = new Promise(function (resolve, reject){
-        let dept={id:1, name:"Full Stack"};
+function promiseDemo() {
+    let p = new Promise(function (resolve, reject) {
+        let dept = { id: 1, name: "Full Stack" };
         resolve(dept);
         reject("The service is currently unavailable")
     })
-    p.then(function(d){
+    p.then(function (d) {
         console.log(d)
-    }).catch(function(e){
+    }).catch(function (e) {
         console.log(e)
     })
 }
 promiseDemo()
 
 
-let p2 = new Promise((resolve,reject)=>{
+let p2 = new Promise((resolve, reject) => {
     resolve(2);
 })
-p2.then(function(d){
+p2.then(function (d) {
     console.log(d);
-    return d*2;
-}).then(function(d){
+    return d * 2;
+}).then(function (d) {
     console.log(d);
-    return d*2;
-}).then(function(d){
+    return d * 2;
+}).then(function (d) {
     console.log(d);
 })
 
 //Fetch API
 // Getting a Resource
-fetch("http://jsonplaceholder.typicode.com/posts/1")
-.then((response)=>response.json())
-.then((json)=>console.log(json))
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => response.json())
+    .then((json) => console.log(json))
+//listing all of the resources
+fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((response) => response.json())
+    .then((json) => console.log(json))
+//Creating a resource
+fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: JSON.stringify({
+        title: "Example Post Request",
+        body: "Antra.com",
+        userId: 1
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+    }
+})
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+//updating a resource
+fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "PUT",
+    body: JSON.stringify({
+        title: "Example Put Request",
+        body: "Antra.com",
+        userId: 1
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+    }
+})
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+//patching a resource
+fetch("https://jsonplaceholder.typicode.com/posts/1", {
+    method: "PATCH",
+    body: JSON.stringify({
+        title: "Example Patch Request"
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+    }
+})
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+//Deleting a resource
+fetch("https://jsonplaceholder.typicode.com/posts/1", {
+    method: "DELETE"
+});
+
+
+//Regular Expression
+//  /^[a-zA-Z0-9.! #$%&'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:\. [a-zA-Z0-9-]+)*$/
+function ValidateEmail(inputText) {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (inputText.value.match(mailformat)) {
+        alert("Valid email address!");
+        document.form1.text1.focus();
+        return true;
+    }
+    else {
+        alert("You have entered an invalid email address!");
+        document.form1.text1.focus();
+        return false;
+    }
+}
