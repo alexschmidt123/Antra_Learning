@@ -41,28 +41,20 @@
             <div class="login" style="width:50%;">
                 <div class="d-flex" style="justify-content:space-between;">
                     <h5>Sign in</h5>
-                    <p>or <a href="index copy.html">create an account</a></p>
+                    <p>or <a href="index.html">log in</a></p>
                 </div>
                 <br>
-                <button type="button"
-                    onclick="window.location.href='https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=offline&client_id=801668726815.apps.googleusercontent.com&include_granted_scopes=true&prompt=select_account&redirect_uri=https%3A%2F%2Fwww.dropbox.com%2Fgoogle%2Fauthcallback&response_type=code&scope=email profile https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts.readonly https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts.other.readonly&state=AERQ5dwi88lRfBoee_DnVyMSWjyexpt4sXF4S3L3EYJjfZUqm1ZbViBMZvlj7Tc1x9L7ynXMiwPszaONf7Fr_QNEYr-IN5LQhck2sfQzFFEaromRGAsADwiq2q1Sa5MthmS7eu6LrFZDzehJasX8i4_dv6F7JS7t1aizOnt3pbCmVgs6qPo08FJCa8Ddx8GwuCMDwykehHv9HWBlmiQbrB_DLzlcinoapDUDH25y7PJMlWA-OigFisDcNsud3HEjatqShsNO84Lxgiddc35I61iZEN3C7Dzo8SclflA7cRiLDaTFwnNfUvUzkxVbYdwRkCS39YMZhE6hJED2RIIOQ3fIDNk34rfEpKzEvhYJC0LQsqH-40ALd7ZlnyE4ikDUVRE&flowName=GeneralOAuthFlow'"
-                    class="btn btn-sm btn-block d-flex"
-                    style="background-color: #1a73e8; color:white; justify-content: left; gap: 30%;"><i
-                        class="fa fa-google" style="margin-top:5px;"></i>
-                    <p style="margin:0 0;">Sign in with Google</p>
-                </button>
-                <br>
-                <button type="button"
-                    onclick="window.location.href='https://appleid.apple.com/auth/authorize?client_id=com.dropbox.Backend&redirect_uri=https%3A%2F%2Fwww.dropbox.com%2Fapple%2Fauthcallback&response_mode=form_post&response_type=code&scope=name email&state=AES3qN__5ft5NLsmb-X0XKWxr5s9gxYg9hpPugx7WPmu3MBKoSmrYruROuBqlWUv24uiX9UtCUha_5CQzl7BewHwfkYWI2LdFs3V0rfXCTM7DCyrb6SkBnaPPfeRckCZKTFjHJwJ7G-o8e35warqeFpMaW_KoeFnYyJ7PUayNuOVsFCMA78uUctPKZvANPZt034g4cHQXqQWbosz824Jhm6oNV3Kmvsge4Gka7-u-uUhBeNpenBYxO36ZdmmQl5SwOQTmfEagMHtK7YVj4yS8C7bJH5NO3EZsmjZpX8RAm5CT8pI4akWkvAzCccdvsiLbAdiPgzFW6EpFbZWPd9cmXHuXhfewl0pXai5ELN-H7IB4OtaG94FvyvgldsMPLc2Mv2Ys9cf0WK7JzuCzTglAyM-'"
-                    class="btn btn-sm btn-block d-flex"
-                    style="background-color: black; color:white; justify-content: left; gap: 30%;"><i
-                        class="fa fa-apple" style="margin-top:5px;"></i>
-                    <p style="margin:0 0;">Sign in with Apple</p>
-                </button>
-                <div class="divider">
-                    <p>or</p>
-                </div>
+
+
                 <form>
+                    <div class="form-group">
+                        <label for="exampleInputName1">First Name</label>
+                        <input type="text" class="form-control" id="exampleInputName1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName2">Last Name</label>
+                        <input type="text" class="form-control" id="exampleInputName2">
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -71,15 +63,28 @@
                         <label for="exampleInputPassword1">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
-                    <div class="d-flex" style="justify-content:space-between">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"><small>I agree to the <a href="https://www.dropbox.com/terms" style="text-decoration:none;">Dropbox Terms</a>. Learn about how we use and protect your data in our <a href="https://www.dropbox.com/privacy" style="text-decoration: none;">Privacy Policy</a>.</small></label>
                     </div>
-                    <a href="https://www.dropbox.com/forgot?email_from_login=">Forgot your password?</a>
+                    <br>
+                    <button type="submit"
+                        onclick="window.location.href=''"
+                        class="btn btn-sm btn-block"
+                        style="background-color: #1a73e8; color:white;">
+                        <p style="margin:0 0;">Create an account</p>
+                    </button>
+                    <br>
                 </form>
+
+                <button type="button"
+                    onclick="window.location.href='https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=offline&client_id=801668726815.apps.googleusercontent.com&include_granted_scopes=true&prompt=select_account&redirect_uri=https%3A%2F%2Fwww.dropbox.com%2Fgoogle%2Fauthcallback&response_type=code&scope=email profile https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts.readonly https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts.other.readonly&state=AERQ5dwi88lRfBoee_DnVyMSWjyexpt4sXF4S3L3EYJjfZUqm1ZbViBMZvlj7Tc1x9L7ynXMiwPszaONf7Fr_QNEYr-IN5LQhck2sfQzFFEaromRGAsADwiq2q1Sa5MthmS7eu6LrFZDzehJasX8i4_dv6F7JS7t1aizOnt3pbCmVgs6qPo08FJCa8Ddx8GwuCMDwykehHv9HWBlmiQbrB_DLzlcinoapDUDH25y7PJMlWA-OigFisDcNsud3HEjatqShsNO84Lxgiddc35I61iZEN3C7Dzo8SclflA7cRiLDaTFwnNfUvUzkxVbYdwRkCS39YMZhE6hJED2RIIOQ3fIDNk34rfEpKzEvhYJC0LQsqH-40ALd7ZlnyE4ikDUVRE&flowName=GeneralOAuthFlow'"
+                    class="btn btn-sm btn-block d-flex"
+                    style="background-color: #1a73e8; color:white; justify-content: left; gap: 30%;"><i
+                        class="fa fa-google" style="margin-top:5px;"></i>
+                    <p style="margin:0 0;">Sign in with Google</p>
+                </button>
             </div>
         </div>
     </div>
