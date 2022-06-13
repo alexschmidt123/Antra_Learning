@@ -76,7 +76,7 @@ console.log(str1.match(mailFormat));
 // truncate("What I'd like to tell on this topic is:", 20) = "What I'd like to te..."
 // truncate("Hi everyone!", 20) = "Hi everyone!"
 function truncate(str, num){
-    if (str.length<num){
+    if (str.length<num){ 
         return str;
     }else{
         return str.split("", num-1).join("") + "...";
