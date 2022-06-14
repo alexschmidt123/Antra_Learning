@@ -1,0 +1,101 @@
+ASP.NET Framework
+
+2016 .NET Core
+ASP.NET Core
+
+ASP.NET Core with MVC
+ASP.NET Core Web API -> Rest API
+
+SQL Server 
+
+C#
+Entity Framework Core
+Dapper
+
+Azure - Cloud
+Azure Dev OPS
+Azure App Service
+Azure Functions
+Azure SQL
+Azure Blob Storage
+
+
+Angular
+
+MVC => web apps
+
+M => Model => Top Movies in a page => List<Movie>
+    Account details => UserModel
+    FirstName
+    LastName
+    Email
+
+V => View => HTML + CSS + JS
+     Razor Syntax (CS + HTML)
+
+Creating Account -> 
+
+
+
+C => Controller => Heart of MVC
+
+
+GET => http://movieshop.com/movies/details/2
+
+Routing
+
+// Controller
+public class MoviesController : Controller
+{
+    // DEAL with Movies functionality
+
+    [HttpGet]
+    public IActionResult Details(int id) {
+
+        // go to database and get the movie details
+        // select * from Movie where id =2 => 20 columns row
+        // Model
+        var movie = movieServices.GetDetails(id); 15 propties
+        return View(movie);
+    }
+
+    http://movieshop.com/movies/topgrossing
+    [HttpGet]
+    public IActionResult TopGrossing() {
+        // got o DB and get top 30 highest grossing movies
+
+        var movies = movieService.GetTop20Movies();
+        return View(movies);
+    }
+
+}
+
+public class AccountController: Controller {
+
+    http://movieshop.com/account/register
+
+    [HttpPost]
+    public IActionResult Register(UserRegisterModel model) {
+        // save the user info in the database
+        return Login View;
+    }
+
+    [HttpGet]
+    public IActionResult Register() {
+        
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Login(UserLoginModel model) {
+        
+        // check for user password and email
+        // return to home page;
+    }
+
+     [HttpGet]
+    public IActionResult Login() {
+        // show the page with empty fields
+        return View();
+    }
+}
