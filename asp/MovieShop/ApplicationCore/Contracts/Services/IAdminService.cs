@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationCore.Contracts.Services
 {
-    public interface IMovieService
+    public interface IAdminService
     {
         //all the business functionality methdos pertaining to Movies
         //Movie
