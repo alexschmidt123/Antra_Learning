@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ApplicationCore.Models;
 
 namespace ApplicationCore.Contracts.Services
 {
     public interface IMovieService
     {
-        //all the business functionality methdos pertaining to Movies
-        //Movie
+        List<MovieCardModel> GetTopGrossingMovies();
     }
 }
