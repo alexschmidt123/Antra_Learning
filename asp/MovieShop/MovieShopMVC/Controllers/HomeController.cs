@@ -9,8 +9,10 @@ namespace MovieShopMVC.Controllers
 {
     public class HomeController : Controller
     {
+        //readonly variables can only be edited in constructors.
         private readonly ILogger<HomeController> _logger;
         private readonly IMovieService _movieService;
+
         // depend on higher level abstraction
         public HomeController(ILogger<HomeController> logger, IMovieService movieService)
         {
