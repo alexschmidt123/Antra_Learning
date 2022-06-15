@@ -10,7 +10,7 @@ namespace MovieShopMVC.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private IMovieService _movieService;
+        private readonly IMovieService _movieService;
         // depend on higher level abstraction
         public HomeController(ILogger<HomeController> logger, IMovieService movieService)
         {

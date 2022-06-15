@@ -9,6 +9,8 @@ builder.Services.AddControllersWithViews();
 // DI is first class citizen in .NET Core
 // In older version .NET Framework, DI is not built-in, so we had to rely on 3rd party libraries, autofac
 builder.Services.AddScoped<IMovieService, MovieService>();
+//To implemenmt MovieTestService:
+//builder.Services.AddScoped<IMovieService, MovieTestService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
