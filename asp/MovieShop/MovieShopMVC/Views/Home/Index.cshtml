@@ -4,10 +4,11 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h2>Top Grossing Movies</h2>
+<h2>TOP Grossing Movies</h2>
 @foreach (var movie in Model)
 {
-    <h3>MovieId: @movie.Id</h3>
-    <h3>MovieId: @movie.Title</h3>
-    <h3>MovieId: @movie.Id</h3>
+    <h3>Movie Id: @movie.Id</h3>
+    <h3>Movie Title: @movie.Title</h3>
+    <h3>Movie Poster: <img src=@movie.Posterurl alt="Poster Url: @movie.Posterurl"></img></h3>
+    
 }

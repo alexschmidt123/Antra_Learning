@@ -5,6 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// DI is first class citizen in .NET Core
+// In older version .NET Framework, DI is not built-in, so we had to rely on 3rd party libraries, autofac
 builder.Services.AddScoped<IMovieService, MovieService>();
 var app = builder.Build();
 

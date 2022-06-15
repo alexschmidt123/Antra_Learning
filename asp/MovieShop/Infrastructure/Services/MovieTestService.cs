@@ -8,23 +8,16 @@ using ApplicationCore.Models;
 
 namespace Infrastructure.Services
 {
-    public class MovieService: IMovieService
+    public class MovieTestService : IMovieService
     {
         public MovieDetailsModel GetMovieDetails(int Id)
         {
-            var movie = new MovieDetailsModel()
-            {
-
-            };
-
-            return movie;
+            throw new NotImplementedException();
         }
 
-        //method that returns top movies to the caller
-        //movie list 
         public List<MovieCardModel> GetTopGrossingMovies()
         {
-            //call the movie repository to get the data from database
+            // going to no SQL database and getting the data
             var movies = new List<MovieCardModel> {
                 new MovieCardModel { Id = 1, Posterurl = "http://images.tmdb.org/t/p/w342//9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg", Title = "Inception"},
                 new MovieCardModel { Id = 2, Posterurl = "", Title = ""},
