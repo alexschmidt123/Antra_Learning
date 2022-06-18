@@ -44,13 +44,6 @@ namespace MovieShopMVC.Controllers
             return View(movies);
         }
         [HttpGet]
-        public IActionResult TopRatedMovies()
-        {
-            //call the movie service
-            //movie service will call movie repository
-            //movie repository will call the database to get the data
-            return View();
-        }
         public IActionResult Privacy()
         {
             return View();

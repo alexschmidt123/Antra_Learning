@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ApplicationCore.Entities;
 
 namespace ApplicationCore.Contracts.Respositories
 {
-    public interface IMovieRepository
+    public interface IMovieRepository: IRepository<Movie>
     {
-        // all the databasse logic methods for movies
-
-        //GetMovieById(int id)
+        IEnumerable<Movie> Get30HighestGrossingMovies();
+        IEnumerable<Movie> Get30HighestRatedMovies();
     }
 }

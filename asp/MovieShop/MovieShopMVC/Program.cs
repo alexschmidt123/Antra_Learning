@@ -1,5 +1,9 @@
+using ApplicationCore.Contracts.Respositories;
 using ApplicationCore.Contracts.Services;
+using Infrastructure.Data;
+using Infrastructure.Repositories;
 using Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +13,16 @@ builder.Services.AddControllersWithViews();
 // DI (Dependency Injection) is first class citizen in .NET Core
 // In older version .NET Framework, DI is not built-in, so we had to rely on 3rd party libraries, autofac
 builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 //To implemenmt MovieTestService:
 //builder.Services.AddScoped<IMovieService, MovieTestService>();
+
+//Inject the connection string into DbContext options constructor
+//get the conncetion string from app settings
+builder.Services.AddDbContext<MovieShopDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection"));
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

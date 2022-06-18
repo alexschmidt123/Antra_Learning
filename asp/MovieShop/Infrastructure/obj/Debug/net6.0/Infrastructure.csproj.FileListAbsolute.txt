@@ -13,3 +13,5 @@ C:\Users\Gaoming\PersonalProjects\Antra_Learning\asp\MovieShop\Infrastructure\ob
 C:\Users\Gaoming\PersonalProjects\Antra_Learning\asp\MovieShop\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
 C:\Users\Gaoming\PersonalProjects\Antra_Learning\asp\MovieShop\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 C:\Users\Gaoming\PersonalProjects\Antra_Learning\asp\MovieShop\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\asp\MovieShop\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+C:\Users\Gaoming\PersonalProjects\Antra_Learning\asp\MovieShop\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
