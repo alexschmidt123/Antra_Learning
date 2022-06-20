@@ -23,24 +23,32 @@ namespace Infrastructure.Data
         public DbSet<MovieCast> MovieCasts { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Trailer> Trailers { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Review> Reviews { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Movie>(ConfigureMovie);
             modelBuilder.Entity<MovieGenre>(ConfigureMovieGenre);
             modelBuilder.Entity<MovieCast>(ConfigureMovieCast);
             modelBuilder.Entity<User>(ConfigureUser);
+            modelBuilder.Entity<UserRole>(ConfigureUserRole);
+            modelBuilder.Entity<Review>(ConfigureReview);
+            modelBuilder.Entity<Purchase>(ConfigurePurchase);
         }
 
         private void ConfigureMovieGenre(EntityTypeBuilder<MovieGenre> builder)
         {
             builder.ToTable("MovieGenre");
-            builder.HasKey(x => new { x.MovieId, x.GenreId });
+            builder.HasKey(m => new { m.MovieId, m.GenreId });
         }
 
         private void ConfigureMovieCast(EntityTypeBuilder<MovieCast> builder)
         {
             builder.ToTable("MovieCast");
-            builder.HasKey(x => new { x.MovieId, x.CastId });
+            builder.HasKey(m => new { m.MovieId, m.CastId });
         }
 
         private void ConfigureMovie(EntityTypeBuilder<Movie> builder)
@@ -75,6 +83,27 @@ namespace Infrastructure.Data
             builder.Property(m => m.PhoneNumber).HasMaxLength(16);
             builder.Property(m => m.LastLoginDateTime).HasDefaultValueSql("getdate()");
             builder.Property(m => m.LockoutEndDate).HasDefaultValueSql("getdate()");
+        }
+
+        private void ConfigureReview(EntityTypeBuilder<Review> builder)
+        {
+            builder.ToTable("Review");
+            builder.HasKey(m => new { m.MovieId, m.UserId });
+            builder.Property(m => m.Rating).HasColumnType("decimal(3, 2)").HasDefaultValue(9.9m);
+        }
+
+        private void ConfigurePurchase(EntityTypeBuilder<Purchase> builder)
+        {
+            builder.ToTable("Purchase");
+            builder.HasKey(m => m.Id);
+            builder.Property(m => m.TotalPrice).HasColumnType("decimal(18, 2)").HasDefaultValue(9.9m);
+            builder.Property(m => m.PurchaseDateTime).HasDefaultValueSql("getdate()");
+        }
+
+        private void ConfigureUserRole(EntityTypeBuilder<UserRole> builder)
+        {
+            builder.ToTable("UserRole");
+            builder.HasKey(m => new { m.RoleId, m.UserId });
         }
     }
 }
