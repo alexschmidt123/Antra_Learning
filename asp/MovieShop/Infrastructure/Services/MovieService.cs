@@ -18,9 +18,9 @@ namespace Infrastructure.Services
             _movieRepository = movieRepository;
         }
 
-        public MovieDetailsModel GetMovieDetails(int id)
+        public async Task<MovieDetailsModel> GetMovieDetails(int id)
         {
-            var movieDetails = _movieRepository.GetById(id);
+            var movieDetails = await _movieRepository.GetById(id);
             var movie = new MovieDetailsModel
             {
                 Id = movieDetails.Id,
@@ -34,7 +34,8 @@ namespace Infrastructure.Services
                 TmdbUrl = movieDetails.TmdbUrl,
                 Revenue = movieDetails.Revenue,
                 Budget = movieDetails.Budget,
-                ReleaseDate = movieDetails.ReleaseDate
+                ReleaseDate = movieDetails.ReleaseDate,
+                Price = movieDetails.Price,
             };
             foreach (var genre in movieDetails.GenresOfMovie)
             {
@@ -46,15 +47,20 @@ namespace Infrastructure.Services
                 movie.Trailers.Add(new TrailerModel { Id = trailer.Id, Name = trailer.Name, TrailerUrl = trailer.TrailerUrl });
             }
 
+            foreach (var moviecast in movieDetails.MovieCasts)
+            {
+                movie.Casts.Add(new CastModel { Id = moviecast.CastId, Name = moviecast.Cast.Name, Gender = moviecast.Cast.Gender, ProfilePath = moviecast.Cast.ProfilePath, TmdbUrl=moviecast.Cast.TmdbUrl });
+            }
+
             return movie;
         }
 
         //method that returns top movies to the caller
         //movie list 
-        public List<MovieCardModel> GetTopGrossingMovies()
+        public async Task<List<MovieCardModel>> GetTopGrossingMovies()
         {
             //call the movie repository to get the data from database
-            var movies = _movieRepository.Get30HighestGrossingMovies();
+            var movies = await _movieRepository.Get30HighestGrossingMovies();
 
             var movieCards = new List<MovieCardModel>();
 

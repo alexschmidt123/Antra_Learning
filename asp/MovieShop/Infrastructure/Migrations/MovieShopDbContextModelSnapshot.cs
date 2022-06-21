@@ -104,7 +104,7 @@ namespace Infrastructure.Migrations
 
                     b.Property<decimal?>("Budget")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("decimal(18,4)")
+                        .HasColumnType("decimal(18,2)")
                         .HasDefaultValue(9.9m);
 
                     b.Property<string>("CreatedBy")
@@ -141,7 +141,7 @@ namespace Infrastructure.Migrations
 
                     b.Property<decimal?>("Revenue")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("decimal(18,4)")
+                        .HasColumnType("decimal(18,2)")
                         .HasDefaultValue(9.9m);
 
                     b.Property<int?>("RunTime")

@@ -10,12 +10,12 @@ namespace Infrastructure.Services
 {
     public class MovieTestService : IMovieService
     {
-        public MovieDetailsModel GetMovieDetails(int Id)
+        public async Task<MovieDetailsModel> GetMovieDetails(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public List<MovieCardModel> GetTopGrossingMovies()
+        public async Task<List<MovieCardModel>> GetTopGrossingMovies()
         {
             // going to no SQL database and getting the data
             var movies = new List<MovieCardModel> {

@@ -23,7 +23,7 @@ namespace MovieShopMVC.Controllers
             // var homeController = new HomeController();
         }
         [HttpGet]
-        public IActionResult Index()
+        public async Task< IActionResult> Index()
         {
             //home page
             // top 30 movies -> Movie Service
@@ -32,8 +32,12 @@ namespace MovieShopMVC.Controllers
             //refactor code
             //var movieService =new MovieService();
             //var movies = movieService.GetTopGrossingMovies();
-            //var homeController = new HomeController(new Logger(),)           
-            var movies = _movieService.GetTopGrossingMovies();
+            //var homeController = new HomeController(new Logger(),)
+            //T1
+            //var x = 9;
+            //I/O bound operation, database over network, send the SQL and SQL will be excuted on DB get back with resu   lts
+            //T1 will wait for this operation
+            var movies = await _movieService.GetTopGrossingMovies();
             //method(int x, IMovieService service)
 
             //var movieService =new MovieService();

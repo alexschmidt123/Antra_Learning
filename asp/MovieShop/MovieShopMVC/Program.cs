@@ -1,5 +1,6 @@
 using ApplicationCore.Contracts.Respositories;
 using ApplicationCore.Contracts.Services;
+using ApplicationCore.Entities;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
@@ -14,6 +15,8 @@ builder.Services.AddControllersWithViews();
 // In older version .NET Framework, DI is not built-in, so we had to rely on 3rd party libraries, autofac
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<IRepository<Genre>, Repository<Genre>>();
+builder.Services.AddScoped<IGenreService, GenreService>();
 //To implemenmt MovieTestService:
 //builder.Services.AddScoped<IMovieService, MovieTestService>();
 
