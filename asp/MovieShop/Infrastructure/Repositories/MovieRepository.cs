@@ -27,17 +27,12 @@ namespace Infrastructure.Repositories
             return movies;
         }
 
-        public Task<IEnumerable<Movie>> Get30HighestRatedMovies()
-        {
-            throw new NotImplementedException();
-        }
-
         public async override Task<Movie> GetById(int id)
         {
             //select * from Movie
             //join cast and Moviecast
             //join Trailer
-            //Genre and MovieGenre
+            //join Genre and MovieGenre
             //where id = id
             var movieDetails = await _dbContext.Movies
                 .Include(m => m.GenresOfMovie).ThenInclude(m => m.Genre)
@@ -50,6 +45,25 @@ namespace Infrastructure.Repositories
             //SingleOrDefault ok for 0 or 1, ex when more than one matching record
             //Single ex when more than one matching record
             return movieDetails;
+        }
+
+        public async Task<IEnumerable<Movie>> GetMoviesByGenre(int id, int pageSize, int pageNumber)
+        {
+            //ICollection < MovieGenre > MoviesOfGenre = 
+            //// LINQ code to get all movies whose genre list contain the genre whiose Id is id 
+            ////await
+            //int numberOfMovieByGenre= await _dbContext.Movies
+            //    .Include(m => m.GenresOfMovie).ThenInclude(m => m.Genre)
+            //    .FirstOrDefaultAsync(m => m.GenresOfMovie.ToList<Genre>
+            //    .Count();
+            //int maxPageNumber = Convert.ToInt32(Math.Ceiling(Convert.ToDecimal(numberOfMovieByGenre / pageSize)));
+            //if (pageNumber > maxPageNumber)
+            //{
+            //    pageNumber = maxPageNumber;
+            //}
+
+            var movies = await _dbContext.Movies.OrderByDescending(m => m.Revenue).Take(30).ToListAsync();
+            return movies;
         }
 
         Task<IEnumerable<Movie>> IMovieRepository.Get30HighestRatedMovies()

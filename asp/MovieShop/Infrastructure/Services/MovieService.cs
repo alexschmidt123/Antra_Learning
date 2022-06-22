@@ -9,7 +9,7 @@ using ApplicationCore.Models;
 
 namespace Infrastructure.Services
 {
-    public class MovieService: IMovieService
+    public class MovieService : IMovieService
     {
         private readonly IMovieRepository _movieRepository;
 
@@ -49,7 +49,7 @@ namespace Infrastructure.Services
 
             foreach (var moviecast in movieDetails.MovieCasts)
             {
-                movie.Casts.Add(new CastModel { Id = moviecast.CastId, Name = moviecast.Cast.Name, Gender = moviecast.Cast.Gender, ProfilePath = moviecast.Cast.ProfilePath, TmdbUrl=moviecast.Cast.TmdbUrl });
+                movie.Casts.Add(new CastModel { Id = moviecast.CastId, Name = moviecast.Cast.Name, Gender = moviecast.Cast.Gender, ProfilePath = moviecast.Cast.ProfilePath, TmdbUrl = moviecast.Cast.TmdbUrl, Character = moviecast.Character });
             }
 
             return movie;
@@ -70,5 +70,20 @@ namespace Infrastructure.Services
             }
             return movieCards;
         }
+
+        public async Task<List<MovieCardModel>> PaginatedResultSet(int id, int pageSize, int pageNumber)
+        {
+            //id is genre id
+            var movies = await _movieRepository.GetMoviesByGenre(id,pageSize,pageNumber);
+
+            var movieCards = new List<MovieCardModel>();
+
+            foreach (var movie in movies)
+            {
+                movieCards.Add(new MovieCardModel { Id = movie.Id, PosterUrl = movie.PosterUrl, Title = movie.Title });
+            }
+            return movieCards;
+        }
     }
+      
 }

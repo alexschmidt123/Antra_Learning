@@ -27,5 +27,10 @@ namespace Infrastructure.Services
             };
             return movies;
         }
+
+        public Task<MovieDetailsModel> PaginatedResultSet(int id, int pageSize, int pageNumber)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

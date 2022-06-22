@@ -13,5 +13,6 @@ namespace ApplicationCore.Models
         public string? ProfilePath { get; set; }
         public string? TmdbUrl { get; set; }
         public string? Gender { get; set; }
+        public string? Character { get; set; }
     }
 }

@@ -67,14 +67,14 @@
         </ul>        
     </div>
     <div class="right" style="flex:3; width:100%">
-        <h2>CASTS</h2>
+        <h2 style="margin-bottom:2em;">CASTS</h2>
         <table class="table">
             <tbody>
                 @foreach (var cast in @Model.Casts)
                 {
                     <tr>
                         <td><img src=@cast.ProfilePath alt=@cast.Name style="max-height:3em;" class="rounded-circle"/></td>
-                        <td>@cast.Id</td>
+                        <td>@cast.Character</td>
                         <td>@cast.Name</td>
                     </tr>
                 }
