@@ -1,3 +1,8 @@
+azure sql:
+linsmovieshopdb
+Lin
+MovieShop0
+
 dotnet ef migrations add InitialMigration -p ../Infrastructure/Infrastructure.csproj
 
 dotnet ef database update
@@ -9,5 +14,26 @@ dotnet ef migrations add CreatingMovieGenreTable -p ../Infrastructure/Infrastruc
 dotnet ef migrations add CreatingTrailerTable -p ../Infrastructure/Infrastructure.csproj
 
 dotnet ef migrations add UpdatingTrailerTable -p ../Infrastructure/Infrastructure.csproj
+
+
+dotnet ef migrations script -idempotent --output scripts.sql
+
+
+
+dotnet tool install -g dotnet-aspnet-codegenerator
+
+# Razor Views
+``` shell
+dotnet tool uninstall -g dotnet-aspnet-codegenerator
+dotnet tool install -g dotnet-aspnet-codegenerator
+```
+
+`  dotnet-aspnet-codegenerator view Register create -m UserRegisterRequestModel   -outDir Views/Account`
+
+``` shell
+dotnet-aspnet-codegenerator view Register create -m UserRegisterRequestModel  -outDir Views/Account  -udl  -scripts
+dotnet-aspnet-codegenerator view Login create -m LoginRequestModel -outDir Views/Account  -udl  -scripts
+udl is use default layout
+
 
 
