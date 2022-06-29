@@ -1,0 +1,8 @@
+What is the difference between JIT compiler and AOT compiler? Explain the advantages and disadvantages of each approach briefly
+What is Routing in Angular and how does it work?
+
+
+Angular University
+Angular.io documentations
+ng add @ng-bootstrap/ng-bootstrap --project MovieShopSPA
+
