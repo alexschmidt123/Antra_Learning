@@ -1,0 +1,64 @@
+Angular CLI Commands:
+
+Create project: ng new <Project-Name>
+Create Module: ng g module folder/<Module-Name> (If you want to register the module use --module app, if you want it to not create a new folder use --flat)
+Create Component: ng g c folder/<Component-Name>
+
+Angular helps us create Single Page Applications (SPA)
+
+Frameworks:
+Angular -> From Google
+React -> Facebook
+Vue
+
+Angular Versions:
+
+Angular releases a new version every 6 months, however every release has Long term support (LTS) for 18 months
+
+Similarities to C#
+Controllers             Components
+Views                   Templates
+Attributes              Decorators
+Services                Services
+Dependency Injection    Dependency Injection
+Routing                 Routing
+Filters                 Guards
+Middlewares             Interceptor
+C#                      TypeScript      Invented by the same guy
+
+Angular is based on Modules:
+Application for Antra -> HCM (Human Capital Management)
+Recruiting -> hire candidates, drop candidates, follow up with candidates, schedule interview, provide feedback
+Sales -> vendor submission, interview schedule, client follow up
+Reporting -> Consultant list, active consultants, placed consultants
+Vendor -> Vendor lists, active vendor, add vendor, remove vendor
+Timesheet -> create timesheet, update timesheet, approve timesheet, timesheet codes
+Authentication -> Login, Forgot password, sign up, log out
+Training
+
+1 Module can have multiple Components
+Components are the building blocks of Angular (provide us with views to display data)
+
+Services: Similar to in C# and ASP.NET, Services are used to hold your business logic example: adding new genre, deleting movie
+
+Pipes: Used to transform and format data in angular. Example: pipe(data); pipe(pipe(pipe(data)));
+
+SharedModule: Components for data or features/functions that are going to be repetitive and need to be used in mulitple modules so you can just put them in the shared module 
+and use them from there. 
+
+Angular decorators: is like a function that we use to attach metadata to a class, or property or method, accessor, parameter. We apply decorators by using the format 
+@expression where expression is the name of the decorators
+
+Angular Directives:
+- Component
+- Structural (ngFor)
+- Attribute (ngClass, ngStyle)
+
+Decorators:
+- @NgModule
+- @Component
+- @Injectable
+- @Directive 
+- @pipe 
+- @Input
+- @Output
