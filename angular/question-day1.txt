@@ -6,3 +6,10 @@ Angular University
 Angular.io documentations
 ng add @ng-bootstrap/ng-bootstrap --project MovieShopSPA
 
+Answers:
+
+1. JIT downloads the compiler and compiles code exactly before Displaying in the browser. AOT has already complied with the code while building your application.
+Compared to JIT, AOT can load faster during displaying (browsers do not need to compile the code in runtime), minimize application size, have errors detected earlier, and have better security. But AOT have longer compile time and more burden on CPU which may slow down app render.
+
+2. Routing means navigating from one page to another page in Angular.
+When the browser's URL changes, that router looks for a corresponding Route from which it can determine the component to display.
