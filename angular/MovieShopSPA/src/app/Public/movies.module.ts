@@ -6,12 +6,16 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { CastDetailsComponent } from './cast-details/cast-details.component';
 import { HomeComponent } from './home/home.component';
 import { MovieComponent } from './movie-details/movie.component';
+import { GenreComponent } from './genre/genre.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    MovieComponent
+    MovieComponent,
+    GenreComponent,
+    ReviewsComponent
   ],
   imports: [
     CommonModule,
