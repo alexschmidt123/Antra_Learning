@@ -5,14 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './Core/core.module';
 import { SharedModule } from './Shared/shared.module';
-import { MovieDetailsComponent } from './Public/movie-details/movie-details.component';
-import { CastDetailsComponent } from './Public/cast-details/cast-details.component';
+import { MoviesModule } from './Public/movies.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MovieDetailsComponent,
-    CastDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +17,7 @@ import { CastDetailsComponent } from './Public/cast-details/cast-details.compone
     FormsModule,
     CoreModule,
     SharedModule,
+    MoviesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
