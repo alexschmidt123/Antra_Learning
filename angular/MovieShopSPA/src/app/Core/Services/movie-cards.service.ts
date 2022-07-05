@@ -10,13 +10,15 @@ export class MovieCardsService {
 
   constructor(private http:HttpClient) { }
 
-  getTopGrossingMovies():Observable<MovieCard[]>{
-    return this.http.get<MovieCard[]>('https://localhost:7194/api/Movies/top-grossing');
+  getTopGrossingMovies(pageNumber:number):Observable<MovieCard[]>{
+    return this.http.get<MovieCard[]>('https://localhost:7194/api/Movies/top-grossing/Page/' + pageNumber );
   }
 
-  getMovieDetails(id:number){
-
+  getTopRatedMovies(pageNumber:number):Observable<MovieCard[]>{
+    return this.http.get<MovieCard[]>('https://localhost:7194/api/Movies/top-rated/Page/' + pageNumber );
   }
+
+  getMovieDetails(id:number){}
   getMoviesByGenre(genreId:number){
 
   }
