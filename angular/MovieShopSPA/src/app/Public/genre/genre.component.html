@@ -17,7 +17,7 @@
                 <td scope="row">{{i+1}}</td>
                 <td>{{g.id}}</td>
                 <td>{{g.name}}</td>
-                <td> <input type="button" class="btn btn-link" value="Movies" (click)="getMoviesByGenre(g.id)" /> &emsp; &emsp; <input type="button" class="btn btn-link" value="Delete" (click)="deleteGenre(g.id)" /> </td>
+                <td> <input type="button" class="btn btn-link" value="Movies" (click)="getMoviesByGenre(g.id)" [routerLink]="['MovieByGenre/',g.id]" /> &emsp; &emsp; <input type="button" class="btn btn-link" value="Delete" (click)="deleteGenre(g.id)" /> </td>
             </tr>
         </tbody>
     </table>

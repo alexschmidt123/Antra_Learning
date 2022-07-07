@@ -4,10 +4,11 @@ import { AddGenreComponent } from './add-genre/add-genre.component';
 import { GenreComponent } from './genre.component';
 import { MoviesByGenreComponent } from './movies-by-genre/movies-by-genre.component';
 
+
 const routes: Routes = [
   {path: '', component: GenreComponent}, 
   {path: 'addGenre', component: AddGenreComponent},
-  {path: 'MovieByGenre', component: MoviesByGenreComponent}  
+  {path: 'MovieByGenre/:id', component: MoviesByGenreComponent}  
 ];
 
 @NgModule({

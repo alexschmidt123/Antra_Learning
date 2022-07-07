@@ -23,7 +23,7 @@ export class GenreComponent implements OnInit {
   }
   getMoviesByGenre(id:number){
     this.genreService.getMoviesByGenre(id).subscribe(m=> {
-      this. moviesByGenre =m;
+      this.moviesByGenre =m;
       console.table(this.moviesByGenre);
     })
   }

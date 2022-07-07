@@ -8,6 +8,9 @@ import { MovieCard } from 'src/app/Shared/Models/movie-card';
   providedIn: 'root'
 })
 export class GenreService {
+  getGenreById(genreId: number):Observable<Genre> {
+    return this.http.get<Genre>('https://localhost:7194/api/Genres/'+ genreId);
+  }
 
   constructor(private http:HttpClient) { }
   
