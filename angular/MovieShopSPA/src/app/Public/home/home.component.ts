@@ -35,11 +35,13 @@ export class HomeComponent implements OnInit {
   ShowTopGrossing(){
     this.Grossingvisible = true;
     this.Ratedvisible = false;
+    this.pageNumber=1;
   }
 
   ShowTopRated(){
     this.Ratedvisible = true;
     this.Grossingvisible = false;
+    this.pageNumber=1;
   }
 
   IncreasePageNumber(){

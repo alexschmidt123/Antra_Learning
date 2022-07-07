@@ -21,17 +21,10 @@ export class MoviesByGenreComponent implements OnInit {
   ngOnInit(): void {
     this.genreService.getMoviesByGenre(this.id).subscribe(m => {
       this.movies = m;
+      this.genreService.getGenreById(this.id).subscribe(g => {
+        this.genre = g;
+      })
       console.table(this.movies);
     });
   }
-
-  getGenreById(id:number){
-    this.genreService.getGenreById(id).subscribe(g=> {
-      this.id = id;
-      console.table(this.genre);
-    })
-  }
-
-
-
 }
