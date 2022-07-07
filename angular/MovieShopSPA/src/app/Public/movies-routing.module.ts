@@ -5,9 +5,12 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MovieComponent } from './movie-details/movie.component';
 
 const routes: Routes = [
-  {path: "", component:MovieComponent},
-  {path: "Details/:id", component:MovieDetailsComponent},
-  {path: "Cast/Details/:id", component:CastDetailsComponent}
+  {path: '', component: MovieComponent,
+  children: [
+    {path: 'Details/:id', component: MovieDetailsComponent},
+    {path: 'Cast/Details/:id', component: CastDetailsComponent}
+  ]
+  }
 ];
 
 @NgModule({

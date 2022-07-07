@@ -4,9 +4,9 @@
 <div class="rounded" *ngIf="Grossingvisible">
     <div class="container-fluid">
         <div class="controller d-flex" style="justify-content: left;">
-            <button type="button" class="parcel-btn weight-option" (click)="DecreasePageNumber()" >Previous Page</button>
+            <button type="button" class="parcel-btn weight-option" (click)="DecreasePageNumber()" [disabled]="pageNumber<=1" >Previous Page</button>
             {{pageNumber}}
-            <button type="button" class="parcel-btn weight-option" (click)="IncreasePageNumber()" >Next Page</button>
+            <button type="button" class="parcel-btn weight-option" (click)="IncreasePageNumber()" [disabled]="Grossingmovies.length != 30">Next Page</button>
         </div>
         <div class="row">
             <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let movie of Grossingmovies">
@@ -21,9 +21,9 @@
 <div class="rounded" *ngIf="Ratedvisible">
     <div class="container-fluid">
         <div class="controller d-flex" style="justify-content:left;">
-            <button type="button" class="parcel-btn weight-option" (click)="DecreasePageNumber()" >Previous Page</button>
+            <button type="button" class="parcel-btn weight-option" (click)="DecreasePageNumber()" [disabled]="pageNumber<=1">Previous Page</button>
             {{pageNumber}}
-            <button type="button" class="parcel-btn weight-option" (click)="IncreasePageNumber()" >Next Page</button>
+            <button type="button" class="parcel-btn weight-option" (click)="IncreasePageNumber()" [disabled]="Ratedmovies.length != 30">Next Page</button>
         </div>
         <div class="row">
             <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let movie of Ratedmovies">
