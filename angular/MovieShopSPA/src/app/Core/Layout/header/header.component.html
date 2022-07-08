@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">MovieShopSPA</a>
+    <div class="navbar-brand" style="margin:auto 1em;">MovieShopSPA</div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,8 +21,9 @@
             </li>
         </ul>
     </div>
+    
     <div class="text-end">
-        <a class="btn btn-outline-primary me-2" [routerLink]="'Account/Login'">Login</a>
-        <a class="btn btn-outline-primary me-2" [routerLink]="'Account/Register'">Sign up</a>
+        <a class="btn btn-outline-secondary me-2" [routerLink]="'Account/Login'">Log in</a>
+        <a class="btn btn-outline-secondary me-2" [routerLink]="'Account/Register'">Sign up</a>
     </div>
 </nav>

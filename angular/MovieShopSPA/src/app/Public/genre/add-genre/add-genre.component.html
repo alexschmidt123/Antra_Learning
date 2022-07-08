@@ -14,6 +14,7 @@
             <div class="form-group">
                 <input type="submit" value="Add Genre" style="margin-bottom: 12px;" [disabled]="!addGenreForm.valid" />
                 <input type="button" value="Clear Form" style="margin-bottom: 12px; margin-left: 12px;" (click)="resetForm(addGenreForm)" />
+                <input type="button" value="Go Back" style="margin-bottom: 12px; margin-left: 12px;" (click)="cancel()" />
             </div>
         </form>
     </div>

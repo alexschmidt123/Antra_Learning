@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm, FormsModule } from '@angular/forms';
 import { GenreService } from 'src/app/Core/Services/genre.service';
 import { Genre } from 'src/app/Shared/Models/genre';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-add-genre',
@@ -14,7 +15,7 @@ export class AddGenreComponent implements OnInit {
   tnc:boolean=false
   flag:boolean=false
   genre:Genre={id: 0, name:""}
-  constructor(private genreService:GenreService) { }
+  constructor(private genreService:GenreService, private location: Location) { }
 
   ngOnInit(): void {
   }
@@ -28,5 +29,9 @@ export class AddGenreComponent implements OnInit {
 
   resetForm(genreForm:NgForm){
     genreForm.resetForm();
+  }
+
+  cancel() {
+    this.location.back(); // <-- go back to previous location on cancel
   }
 }

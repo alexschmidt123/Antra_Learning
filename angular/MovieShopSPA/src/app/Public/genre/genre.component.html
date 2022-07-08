@@ -1,23 +1,29 @@
-<div class="container-fluid"  style="padding-bottom: 2em;">
-    <div class="alert alert-primary" role="alert" *ngIf="deleteFlag">
-        Genre Deleted Successfully!
-    </div>
-    <input type="button" class="btn btn-outline-secondary" value="Add" [routerLink]="'addGenre'" />
-    <table class="table">
+<div class="container-fluid">
+    <button type="button" class="btn btn-outline-success" [routerLink]="'addGenre'" 
+    style="
+    margin-left:80%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;">Add New Genre</button>
+    <table class="table table-striped table-bordered">
         <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">ID</th>
+                <th scope="col">Id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Options</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let g of genres; index as i">
-                <td scope="row">{{i+1}}</td>
                 <td>{{g.id}}</td>
                 <td>{{g.name}}</td>
-                <td> <input type="button" class="btn btn-link" value="Movies" (click)="getMoviesByGenre(g.id)" [routerLink]="['MovieByGenre/',g.id]" /> &emsp; &emsp; <input type="button" class="btn btn-link" value="Delete" (click)="deleteGenre(g.id)" /> </td>
+                <td class="d-flex flex-row gap-3"> 
+                    <a type="button" class="text-primary" (click)="getMoviesByGenre(g.id)" [routerLink]="['MovieByGenre/',g.id]">Movies</a>
+                    <a type="button" class="text-danger" (click)="deleteGenre(g.id)">Delete</a>
+                </td>
             </tr>
         </tbody>
     </table>

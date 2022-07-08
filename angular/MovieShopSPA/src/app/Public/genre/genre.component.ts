@@ -11,7 +11,8 @@ import { MovieCard } from 'src/app/Shared/Models/movie-card';
 export class GenreComponent implements OnInit {
   moviesByGenre!: MovieCard[];
   genres!:Genre[];
-  deleteFlag:boolean = false;
+  genre!:Genre;
+  message!: string;
 
   constructor(private genreService:GenreService) { }
 
@@ -28,8 +29,16 @@ export class GenreComponent implements OnInit {
     })
   }
   deleteGenre(id:number){
-    this.genreService.deleteGenre(id).subscribe(p => {
-      this.deleteFlag = true;
-    })
+    this.genreService.getGenreById(id).subscribe(g => {
+      this.genre = g;
+      this.message="Genre "+ this.genre.name+" (id = "+this.genre.id+") was Deleted Successfully!";
+    });
+    this.genreService.deleteGenre(id).subscribe(p=>{
+      alert(this.message);
+      window.setTimeout(()=>{
+        console.log('1 second passed!');
+      }, 1000);
+      window.location.reload();
+    });
   }
 }

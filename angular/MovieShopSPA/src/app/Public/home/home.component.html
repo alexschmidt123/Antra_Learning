@@ -1,11 +1,15 @@
-<button type="button" class="parcel-btn weight-option" (click)="ShowTopRated()" >Top Rated</button>
-<button type="button" class="parcel-btn weight-option" (click)="ShowTopGrossing()" >Top Grossing</button>
+<div class="btn-group btn-group-sm m-3" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary" (click)="ShowTopRated()">Top Rated</button>
+    <button type="button" class="btn btn-secondary" (click)="ShowTopGrossing()">Top Grossing</button>
+</div>
 <div class="rounded" *ngIf="Grossingvisible">
     <div class="container-fluid">
         <div class="controller d-flex" style="justify-content: left;">
-            <button type="button" class="parcel-btn weight-option" (click)="DecreasePageNumber()" [disabled]="pageNumber<=1" >Previous Page</button>
+            <button type="button" class="parcel-btn weight-option" (click)="DecreasePageNumber()"
+                [disabled]="pageNumber<=1">Previous Page</button>
             {{pageNumber}}
-            <button type="button" class="parcel-btn weight-option" (click)="IncreasePageNumber()" [disabled]="Grossingmovies.length != 30">Next Page</button>
+            <button type="button" class="parcel-btn weight-option" (click)="IncreasePageNumber()"
+                [disabled]="Grossingmovies.length != 30">Next Page</button>
         </div>
         <div class="row">
             <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let movie of Grossingmovies">
@@ -14,16 +18,28 @@
                 </div>
             </div>
         </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm ">
+                <li class="page-item">
+                    <button type="button" class="page-link text-dark" (click)="DecreasePageNumber()"
+                    [disabled]="pageNumber<=1">&laquo;</button>
+                </li>
+                <li class="page-item"><button class="page-link  text-dark" (click)="DecreasePageNumber()"
+                    [disabled]="pageNumber<=1">{{pageNumber-1}}</button></li>
+                <li class="page-item"><a class="page-link text-muted" aria-disabled="true">{{pageNumber}}</a></li>
+                <li class="page-item"><button class="page-link  text-dark" (click)="IncreasePageNumber()"
+                    [disabled]="Grossingmovies.length != 30">{{pageNumber+1}}</button></li>
+                <li class="page-item">
+                    <button type="button" class="page-link  text-dark" (click)="IncreasePageNumber()"
+                    [disabled]="Grossingmovies.length != 30">&raquo;</button>
+                </li>
+            </ul>
+        </nav>
     </div>
 </div>
 
 <div class="rounded" *ngIf="Ratedvisible">
     <div class="container-fluid">
-        <div class="controller d-flex" style="justify-content:left;">
-            <button type="button" class="parcel-btn weight-option" (click)="DecreasePageNumber()" [disabled]="pageNumber<=1">Previous Page</button>
-            {{pageNumber}}
-            <button type="button" class="parcel-btn weight-option" (click)="IncreasePageNumber()" [disabled]="Ratedmovies.length != 30">Next Page</button>
-        </div>
         <div class="row">
             <div class="col-6 col-lg-3 col-sm-4 col-xl-2" *ngFor="let movie of Ratedmovies">
                 <div class="card mb-4">
@@ -31,5 +47,22 @@
                 </div>
             </div>
         </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm ">
+                <li class="page-item">
+                    <button type="button" class="page-link text-dark" (click)="DecreasePageNumber()"
+                    [disabled]="pageNumber<=1">&laquo;</button>
+                </li>
+                <li class="page-item"><button class="page-link  text-dark" (click)="DecreasePageNumber()"
+                    [disabled]="pageNumber<=1">{{pageNumber-1}}</button></li>
+                <li class="page-item"><a class="page-link text-muted" aria-disabled="true">{{pageNumber}}</a></li>
+                <li class="page-item"><button class="page-link  text-dark" (click)="IncreasePageNumber()"
+                    [disabled]="Ratedmovies.length != 30">{{pageNumber+1}}</button></li>
+                <li class="page-item">
+                    <button type="button" class="page-link  text-dark" (click)="IncreasePageNumber()"
+                    [disabled]="Ratedmovies.length != 30">&raquo;</button>
+                </li>
+            </ul>
+        </nav>
     </div>
 </div>
