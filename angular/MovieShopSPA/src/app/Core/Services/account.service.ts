@@ -8,7 +8,7 @@ import { User } from 'src/app/Shared/Models/user';
 
 @Injectable({
   providedIn: 'root'
-}) 
+})
 export class AccountService {
 
   private currentUserSubject = new BehaviorSubject<any>({} as any);
@@ -25,6 +25,7 @@ export class AccountService {
     return this.http.post('https://localhost:7194/api/Account/login', login).pipe(map((response:any) => {
       if (response){
         localStorage.setItem('token', response.token);
+        this.populateUserInfoFromToken();
         return true;
       }
       return false;
@@ -51,4 +52,5 @@ export class AccountService {
       this.isLoggedInSubject.next(true);
     };
   }
+
 }

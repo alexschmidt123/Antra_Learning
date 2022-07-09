@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
         this.flag = true;
         setTimeout(() => {
           this._router.navigateByUrl('/');
-        }, 10000); 
+        }, 1000); 
       } else {
         this.failed = true;
       };

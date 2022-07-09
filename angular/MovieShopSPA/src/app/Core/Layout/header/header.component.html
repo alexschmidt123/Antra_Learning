@@ -23,12 +23,13 @@
     </div>
 
     <div class="text-end" *ngIf="!isLoggedIn">
-        <a class="btn btn-outline-primary me-2" [routerLink]="'Account/Login'">Login</a>
-        <a class="btn btn-outline-primary me-2" [routerLink]="'Account/Register'">Sign up</a>
+        <a class="btn btn-outline-secondary me-2" [routerLink]="'Account/Login'">Login</a>
+        <a class="btn btn-outline-secondary me-2" [routerLink]="'Account/Register'">Sign up</a>
     </div>
     <div class="text-end" *ngIf="isLoggedIn">
-        Hi {{currentUser.given_name + ' ' + currentUser.family_name}}
-        <a class="btn btn-outline-primary me-2" (click)="Logout()">Logout</a>
+        <div class="d-flex justify-content-around">
+            <p>Hi, {{currentUser.given_name + ' ' + currentUser.family_name}}</p>
+            <a class="btn btn-outline-secondary me-2" (click)="Logout()">Logout</a>
+        </div>
     </div>
-
 </nav>
