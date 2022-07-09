@@ -1,4 +1,4 @@
-<div class="container-fluid m-3">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-8 mx-auto">
             <div class="card">
@@ -46,8 +46,8 @@
                             <input type="Date" class="form-control" formControlName="dateOfBirth" />
                             <span class="text-danger" *ngIf="(registerFormControl['dateOfBirth'].touched || submitted) && (registerFormControl['dateOfBirth'].errors?.['required'])" >Date of Birth is Required!</span>
                         </div>
-                        <div class="form-group text-end" style=" margin-top: 1em;">
-                            <button type="submit" class="btn btn-secondary">Register</button>
+                        <div class="form-group text-end">
+                            <button type="submit" class="btn btn-success me-2">Register</button>
                         </div>
                     </form>
                 </div>

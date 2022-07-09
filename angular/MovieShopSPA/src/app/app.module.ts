@@ -8,6 +8,8 @@ import { SharedModule } from './Shared/shared.module';
 import { MoviesModule } from './Public/movies.module';
 import { HttpClientModule } from '@angular/common/http';
 import { GenreModule } from './Public/genre/genre.module';
+import { NgForm } from '@angular/forms';
+import { JwtAdderInterceptor } from './Core/Interceptors/jwt-adder.interceptor';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { GenreModule } from './Public/genre/genre.module';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [JwtAdderInterceptor],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
