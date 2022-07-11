@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'Account', loadChildren: () => import("./Account/account.module").then(mod => mod.AccountModule) },
   { path: 'User', loadChildren: () => import("./User/user.module").then(mod => mod.UserModule), canActivate: [AuthGuardGuard] },
   { path: 'Genres', loadChildren: () => import("./Public/genre/genre.module").then(mod => mod.GenreModule) },
-  { path: 'Reviews', component: ReviewsComponent }
+  { path: 'Reviews', component: ReviewsComponent },
 ];
 
 @NgModule({

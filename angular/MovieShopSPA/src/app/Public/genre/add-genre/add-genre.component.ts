@@ -10,7 +10,6 @@ import { Location } from '@angular/common';
   styleUrls: ['./add-genre.component.css']
 })
 export class AddGenreComponent implements OnInit {
-
   name:string=''
   tnc:boolean=false
   flag:boolean=false

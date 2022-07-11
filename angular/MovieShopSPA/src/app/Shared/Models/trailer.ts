@@ -1,5 +1,5 @@
 export interface Trailer {
-    Id:number;
-    TrailerUrl:string;
-    Name:string;
+    id:number;
+    trailerUrl:string;
+    name:string;
 }

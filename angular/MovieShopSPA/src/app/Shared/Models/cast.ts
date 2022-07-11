@@ -1,6 +1,6 @@
 export interface Cast {
-    Id:number;
-    Name:string;
-    ProfilePath:string;
-    Character:string;
+    id:number;
+    name:string;
+    profilepath:string;
+    character:string;
 }

@@ -1,5 +1,5 @@
 export interface MovieCard {
-    Id:number;
-    Title:string;
+    id:number;
+    title:string;
     posterUrl:string;
 }

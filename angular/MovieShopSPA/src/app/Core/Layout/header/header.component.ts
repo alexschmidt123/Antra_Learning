@@ -9,7 +9,7 @@ import { AccountService } from '../../Services/account.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  isAdmin:boolean = false;
   isLoggedIn:boolean = false;
   currentUser:User;
   constructor(private accountService:AccountService, private _router:Router) { }
@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
     });
     this.accountService.currentUser.subscribe(data => {
       this.currentUser = data;
+      this.isAdmin = data.isAdmin;
     });
   }
 

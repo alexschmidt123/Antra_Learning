@@ -1,1 +1,25 @@
-<p>create-movie works!</p>
+<div class="container-fluid">
+    <div class="alert alert-primary" role="alert" *ngIf="flag">
+        Movie Added Successfully!
+    </div>
+    <div class="d-flex justify-content-left">
+        <form #addMovieForm = "ngForm" (submit)="addMovie(addMovieForm)">
+            <div class="form-group">
+                <label for="name">Title: </label>
+                <input type="text" [(ngModel)] = "title" name="title" class="form-control-inline" style="margin: 12px;" placeholder="Title" required />
+            </div>
+            <div class="form-group">
+                <label for="name">PosterUrl: </label>
+                <input type="text" [(ngModel)] = "posterUrl" name="posterUrl" class="form-control-inline" style="margin: 12px;" placeholder="PosterUrl" required />
+            </div>
+            <div class="form-group">
+                <input type="checkbox" [(ngModel)] = "tnc" name="tnc" style="margin-top: 12px; margin-bottom: 16px; margin-right: 4px;" required /> I have read and accept the Terms and Conditions
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add Movie" style="margin-bottom: 12px;" [disabled]="!addMovieForm.valid" />
+                <input type="button" value="Clear Form" style="margin-bottom: 12px; margin-left: 12px;" (click)="resetForm(addMovieForm)" />
+                <input type="button" value="Go Back" style="margin-bottom: 12px; margin-left: 12px;" (click)="cancel()" />
+            </div>
+        </form>
+    </div>
+</div>
