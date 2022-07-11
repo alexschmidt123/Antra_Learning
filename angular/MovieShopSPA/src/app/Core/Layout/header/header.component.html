@@ -19,24 +19,44 @@
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="'Reviews'">Reviews</a>
             </li>
+            <li>
+                <p>
+                    isLoggedIn={{isLoggedIn}};
+                    isAdmin={{isAdmin}};
+                </p>
+            </li>
         </ul>
     </div>
-
-    <div class="text-end"  *ngIf="!isLoggedIn">
+    <div class="text-end" *ngIf="!isLoggedIn">
         <a class="btn btn-outline-secondary me-2" [routerLink]="'Account/Login'">Login</a>
         <a class="btn btn-outline-secondary me-2" [routerLink]="'Account/Register'">Sign up</a>
     </div>
-    <div class="text-end" *ngIf="isLoggedIn">
+    <div class="text-end" *ngIf="isLoggedIn && !isAdmin">
         <div class="dropdown show">
-            <a class="btn btn-outline-light text-dark me-2 dropdown-toggle shadow-none" role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi, {{currentUser.given_name + ' '
+            <a class="btn btn-outline-light text-dark me-2 dropdown-toggle shadow-none" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi,
+                {{currentUser.given_name + ' '
                 +currentUser.family_name}}</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Movies   <i class="fa fa-film"></i></a>
-                <a class="dropdown-item" href="#">Favorites  <i class="fa fa-star"></i></a>
-                <a class="dropdown-item" href="#">Accounts   <i class="fa fa-user-circle"></i></a>
-                <a class="dropdown-item" [routerLink]="'Admin/createMovie'" *ngIf="isAdmin">Admin   <i class='fa fa-users'></i></a>
-                <a class="dropdown-item" (click)="Logout()">Log Out   <i class="fa fa-sign-out"></i></a>
+                <a class="dropdown-item" href="#">Movies <i class="fa fa-film"></i></a>
+                <a class="dropdown-item" href="#">Favorites <i class="fa fa-star"></i></a>
+                <a class="dropdown-item" href="#">Accounts <i class="fa fa-user-circle"></i></a>             
+                <a class="dropdown-item" (click)="Logout()">Log Out <i class="fa fa-sign-out"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="text-end" *ngIf="isLoggedIn && isAdmin">
+        <div class="dropdown show">
+            <a class="btn btn-outline-light text-dark me-2 dropdown-toggle shadow-none" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi,
+                {{currentUser.given_name + ' '
+                +currentUser.family_name}}</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Movies <i class="fa fa-film"></i></a>
+                <a class="dropdown-item" href="#">Favorites <i class="fa fa-star"></i></a>
+                <a class="dropdown-item" href="#">Accounts <i class="fa fa-user-circle"></i></a>
+                <a class="dropdown-item" [routerLink]="'Admin/createMovie'">Admin <i class='fa fa-users'></i></a>               
+                <a class="dropdown-item" (click)="Logout()">Log Out <i class="fa fa-sign-out"></i></a>
             </div>
         </div>
     </div>

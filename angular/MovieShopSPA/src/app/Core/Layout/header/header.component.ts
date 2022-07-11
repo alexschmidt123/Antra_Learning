@@ -20,7 +20,13 @@ export class HeaderComponent implements OnInit {
     });
     this.accountService.currentUser.subscribe(data => {
       this.currentUser = data;
-      this.isAdmin = data.isAdmin;
+      //this.isAdmin = data.isAdmin.value;
+      console.log(this.currentUser);
+      //console.log(this.isAdmin);
+    });
+    this.accountService.isAdmin.subscribe(data=>{
+      this.isAdmin = data;
+      console.log(this.isAdmin);
     });
   }
 

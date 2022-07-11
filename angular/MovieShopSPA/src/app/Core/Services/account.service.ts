@@ -17,6 +17,9 @@ export class AccountService {
   private isLoggedInSubject = new BehaviorSubject<boolean>(false);
   public isLoggedIn = this.isLoggedInSubject.asObservable();
 
+  private isAdminSubject = new BehaviorSubject<boolean>(false);
+  public isAdmin = this.isAdminSubject.asObservable();
+
   jwtHelper = new JwtHelperService();
 
   constructor(private http:HttpClient) { }
@@ -36,6 +39,7 @@ export class AccountService {
     localStorage.removeItem('token');
     this.currentUserSubject.next({} as User);
     this.isLoggedInSubject.next(false);
+    this.isAdminSubject.next(false);
   }
 
   Register(registration:Register):Observable<boolean>{
@@ -50,6 +54,7 @@ export class AccountService {
 
       this.currentUserSubject.next(decodedToken);
       this.isLoggedInSubject.next(true);
+      this.isAdminSubject.next(decodedToken.isAdmin);
     };
   }
 
