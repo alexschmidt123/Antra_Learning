@@ -22,7 +22,7 @@
             Console.WriteLine(chars[0] + " " + chars[2]);
         } else
         {
-            for (int i = 1; i < length; i= i+4)
+            for (int i = 1; i < length; i= i + 4)
             {
                 Console.Write(" " + chars[i] + "  ");
             }
